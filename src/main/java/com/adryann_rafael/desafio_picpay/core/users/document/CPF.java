@@ -1,12 +1,9 @@
 package com.adryann_rafael.desafio_picpay.core.users.document;
 
-public class CPF extends Document{
-
-    private String value;
+public class CPF extends Document {
 
     public CPF(String value) {
-        super(DocumentType.CPF);
-        this.value = value;
+        super(DocumentType.CPF, value);
         this.validate();
     }
 
@@ -15,7 +12,4 @@ public class CPF extends Document{
 
     }
 
-    public String value() {
-        return value;
-    }
 }

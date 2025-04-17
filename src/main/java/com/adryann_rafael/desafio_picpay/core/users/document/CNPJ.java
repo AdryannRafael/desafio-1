@@ -4,16 +4,12 @@ public class CNPJ extends Document {
     private String value;
 
     public CNPJ(String value) {
-        super(DocumentType.CNPJ);
+        super(DocumentType.CNPJ, value);
         this.value = value;
     }
 
     @Override
     void validate() {
 
-    }
-
-    public String value() {
-        return value;
     }
 }
